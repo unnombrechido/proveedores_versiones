@@ -1,0 +1,38 @@
+{
+  "version": "0.1.0",
+  "release_date": "2026-02-04",
+  "release_name": "Beta Release",
+  "type": "minor",
+  "status": "beta",
+  "description": "Primera versión beta del sistema Proveedores para pruebas y validación",
+  "changes": {
+    "added": [
+      "Versión beta inicial del sistema Proveedores",
+      "Funcionalidades básicas del sistema de gestión"
+    ],
+    "changed": [],
+    "deprecated": [],
+    "removed": [],
+    "fixed": [],
+    "security": []
+  },
+  "compatibility": {
+    "minimum_version": "0.1.0",
+    "breaking_changes": false
+  },
+  "files": {
+    "source": [
+      "proveedores-v0.1.zip"
+    ],
+    "documentation": [
+      "RELEASE_NOTES.md"
+    ],
+    "configuration": []
+  },
+  "checksum": {
+    "algorithm": "sha256",
+    "value": ""
+  },
+  "authors": [],
+  "notes": "Esta es una versión beta destinada a pruebas internas. No recomendada para producción."
+}

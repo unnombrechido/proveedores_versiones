@@ -7,8 +7,12 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-02-04
+
 ### Added
-- Estructura inicial del repositorio de versiones
+- Primera versión beta del sistema Proveedores (proveedores-v0.1.zip)
+- Funcionalidades básicas del sistema de gestión
+- Estructura de versión beta para pruebas internas
 
 ## [1.0.0] - 2026-02-04
 
