@@ -1,0 +1,29 @@
+# Build artifacts
+build/
+dist/
+*.pyc
+*.pyo
+__pycache__/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Node modules (if using JavaScript)
+node_modules/
+
+# Environment files
+.env
+.env.local

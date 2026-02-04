@@ -1,0 +1,51 @@
+{
+  "version": "X.Y.Z",
+  "release_date": "YYYY-MM-DD",
+  "release_name": "Release Name",
+  "type": "major|minor|patch",
+  "status": "alpha|beta|rc|stable",
+  "description": "Descripción breve de la versión",
+  "changes": {
+    "added": [
+      "Lista de nuevas características"
+    ],
+    "changed": [
+      "Lista de cambios en funcionalidades existentes"
+    ],
+    "deprecated": [
+      "Lista de características obsoletas"
+    ],
+    "removed": [
+      "Lista de características eliminadas"
+    ],
+    "fixed": [
+      "Lista de bugs corregidos"
+    ],
+    "security": [
+      "Lista de mejoras de seguridad"
+    ]
+  },
+  "compatibility": {
+    "minimum_version": "X.Y.Z",
+    "breaking_changes": false
+  },
+  "files": {
+    "source": [
+      "Lista de archivos de código fuente"
+    ],
+    "documentation": [
+      "Lista de archivos de documentación"
+    ],
+    "configuration": [
+      "Lista de archivos de configuración"
+    ]
+  },
+  "checksum": {
+    "algorithm": "sha256",
+    "value": "hash_del_release"
+  },
+  "authors": [
+    "Nombre del autor o autores"
+  ],
+  "notes": "Notas adicionales sobre esta versión"
+}
