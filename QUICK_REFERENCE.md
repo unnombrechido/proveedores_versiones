@@ -1,10 +1,18 @@
 # Quick Reference Guide - Proveedores Versiones
 
+## � Current Version
+
+**v1.0.0** - First stable release (2026-02-04)
+- Distribution file: `proveedores-v1.0.zip` (~134 KB)
+- Status: Stable
+- [View Release Notes](versions/1.0.0/RELEASE_NOTES.md)
+
 ## 🚀 Common Commands
 
 ### View Current Version
 ```bash
 cat VERSION
+# Output: 1.0.0
 ```
 
 ### View Change History
@@ -15,6 +23,8 @@ cat CHANGELOG.md
 ### List All Versions
 ```bash
 ls -1 versions/ | grep -E '^[0-9]+\.'
+# Output: 0.1.0
+#         1.0.0
 ```
 
 ### View Version Details
@@ -25,6 +35,16 @@ cat versions/1.0.0/version.json
 # Release notes
 cat versions/1.0.0/RELEASE_NOTES.md
 ```
+
+## ✨ What's New in v1.0.0
+
+- ✨ Database maintenance utilities
+- ✨ Sample data loader
+- ✨ CSV import templates
+- ✨ Configurable logo support
+- ✨ Upgrade path from v0.1
+- 🐛 Import modal pre-selection fix
+- 🐛 run.bat path correction
 
 ## 📝 Creating a New Version
 

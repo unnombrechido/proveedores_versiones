@@ -6,6 +6,13 @@ Repositorio de versiones para código de app de Proveedores.
 
 Este repositorio gestiona el control de versiones y releases del sistema Proveedores, siguiendo las mejores prácticas de versionado semántico y documentación de cambios.
 
+## 📦 Versión Actual
+
+**v1.0.0** - Primera versión estable del Sistema de Gestión de Proveedores
+- **Fecha de Lanzamiento**: 2026-02-04
+- **Archivo de Distribución**: `proveedores-v1.0.zip` (~134 KB)
+- **Estado**: Stable
+
 ## 🗂️ Estructura del Repositorio
 
 ```
@@ -26,10 +33,15 @@ proveedores_versiones/
 
 ## 🚀 Inicio Rápido
 
+### Descargar la Última Versión
+
+La última versión estable es **v1.0.0** - archivo de distribución: `proveedores-v1.0.zip`
+
 ### Ver Versión Actual
 
 ```bash
 cat VERSION
+# Output: 1.0.0
 ```
 
 ### Ver Historial de Cambios
@@ -38,12 +50,22 @@ cat VERSION
 cat CHANGELOG.md
 ```
 
-### Ver Detalles de una Versión
+### Ver Detalles de la Versión Actual
 
 ```bash
 cat versions/1.0.0/version.json
 cat versions/1.0.0/RELEASE_NOTES.md
 ```
+
+## ✨ Características de v1.0.0
+
+- ✨ Utilidades de mantenimiento de base de datos
+- ✨ Cargador automático de datos de ejemplo
+- ✨ Templates CSV para importación
+- ✨ Soporte para logo personalizable
+- ✨ Sistema de actualización desde v0.1
+- 🐛 Múltiples correcciones de bugs
+- 💡 Mejoras en la interfaz de usuario
 
 ## 📚 Documentación
 

@@ -17,7 +17,27 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 ## [1.0.0] - 2026-02-04
 
 ### Added
-- Estructura de archivos para gestión de versiones
-- Sistema de versionado semántico
-- Plantilla de notas de versión
-- Documentación de versionado
+- ✨ Database maintenance utilities (cleanup_database.py/.bat)
+- ✨ Automatic sample data loader (load_sample_data.py/.bat)
+- ✨ CSV import templates with examples (suppliers, items, prices)
+- ✨ Configurable logo support via config.ini
+- ✨ Server-side configuration API endpoints
+- ✨ Patch installer for v0.1 upgrades (PATCH-v0.1.bat/ps1)
+- ✨ Dynamic logo loading in UI
+- ✨ Enhanced documentation (DATABASE_CLEANUP.md, LOAD_SAMPLE_DATA.md)
+- ✨ Sample CSV files (import_proveedores.csv, import_lista_materiales.csv)
+
+### Fixed
+- 🐛 Import modal now pre-selects correct type
+- 🐛 Fixed run.bat path (app\app.py)
+- 🐛 Logo placeholder when no logo configured
+
+### Improved
+- 💡 CSV support for combined imports (items+suppliers+prices)
+- 💡 Configuration preservation during upgrades
+- 💡 Better import validation and error messages
+
+### Distribution
+- 📦 Distribution file: proveedores-v1.0.zip (~134 KB)
+- 📦 Total files: 44 files
+- 📦 Full backward compatibility with v0.1 data
