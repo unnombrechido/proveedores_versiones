@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "release_date": "2026-02-04",
+  "release_name": "Initial Release",
+  "type": "major",
+  "status": "stable",
+  "description": "Primera versión estable del sistema de gestión de versiones para Proveedores",
+  "changes": {
+    "added": [
+      "Estructura de directorios para versiones",
+      "Sistema de versionado semántico",
+      "Plantillas de documentación"
+    ],
+    "changed": [],
+    "deprecated": [],
+    "removed": [],
+    "fixed": [],
+    "security": []
+  },
+  "compatibility": {
+    "minimum_version": "1.0.0",
+    "breaking_changes": false
+  },
+  "files": {
+    "source": [],
+    "documentation": [
+      "README.md",
+      "VERSIONING.md",
+      "CHANGELOG.md"
+    ],
+    "configuration": [
+      "VERSION"
+    ]
+  },
+  "checksum": {
+    "algorithm": "sha256",
+    "value": ""
+  },
+  "authors": [],
+  "notes": "Esta es la versión inicial del repositorio de versiones para el app Proveedores."
+}
