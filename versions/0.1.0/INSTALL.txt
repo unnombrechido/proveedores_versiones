@@ -1,0 +1,203 @@
+================================================================================
+  SISTEMA DE GESTION DE PROVEEDORES E INVENTARIO v0.1
+  Guía de Instalación Rápida
+================================================================================
+
+REQUISITOS
+----------
+- Python 3.8 o superior (o dejar que el instalador lo instale automáticamente)
+- Conexión a internet (para descargar dependencias)
+- 50MB de espacio en disco
+
+================================================================================
+
+INSTALACION AUTOMATICA (RECOMENDADO)
+-------------------------------------
+
+WINDOWS:
+~~~~~~~~
+1. Haz doble clic en: INSTALAR.bat
+   
+   Este es el método MÁS FÁCIL y funciona siempre, incluso si tienes
+   problemas de permisos de PowerShell.
+
+   Alternativas:
+   - install.bat (instalador básico)
+   - setup-complete.ps1 (instalador completo con personalización)
+
+2. Espera a que termine la instalación (2-5 minutos)
+   Verás una barra de progreso mostrando el avance.
+
+3. Para iniciar la aplicación:
+   - Haz doble clic en: start.bat
+   - O usa el acceso directo del escritorio (si lo creaste)
+
+
+NOTA IMPORTANTE:
+Si recibes un error como "cannot be loaded because running scripts is 
+disabled", simplemente usa INSTALAR.bat en lugar de setup-complete.ps1
+INSTALAR.bat resuelve este problema automáticamente.
+
+
+LINUX / MAC:
+~~~~~~~~~~~~
+1. Abre una terminal en esta carpeta
+
+2. Dale permisos de ejecución:
+   chmod +x install.sh
+
+3. Ejecuta el instalador:
+   ./install.sh
+
+4. Espera a que termine la instalación (2-5 minutos)
+
+5. Para iniciar la aplicación:
+   ./start.sh
+
+
+ACCESO:
+~~~~~~~
+Abre tu navegador en: http://localhost:5000
+
+================================================================================
+
+INSTALACION MANUAL
+-------------------
+
+Si los instaladores automáticos no funcionan:
+
+1. Crear entorno virtual:
+   
+   Windows:
+   python -m venv venv
+   .\venv\Scripts\activate
+
+   Linux/Mac:
+   python3 -m venv venv
+   source venv/bin/activate
+
+2. Instalar dependencias:
+   pip install -r requirements.txt
+
+3. Iniciar aplicación:
+   python app.py
+
+4. Abrir navegador:
+   http://localhost:5000
+
+================================================================================
+
+VERIFICACION
+------------
+
+Después de la instalación, verifica que:
+
+1. El archivo "suppliers.db" fue creado (base de datos)
+2. La carpeta "venv" existe (entorno virtual)
+3. El archivo "start.bat" o "start.sh" fue creado
+
+Si algo falla:
+- Verifica que Python esté instalado: python --version
+- Verifica tu conexión a internet
+- Lee la sección Troubleshooting en README.md
+
+================================================================================
+
+PRIMEROS PASOS
+--------------
+
+1. IMPORTAR DATOS:
+   - Ve a "Gestionar Proveedores" → "Importar Proveedores"
+   - Usa el archivo "example_suppliers.csv" como referencia
+
+2. AGREGAR ITEMS:
+   - Ve a "Gestionar Inventario" → "Nuevo Item"
+   - Completa el formulario
+
+3. GESTIONAR PRECIOS:
+   - Ve a "Gestionar Inventario" → "Gestionar Precios"
+   - Asocia items con proveedores y define precios
+
+4. CREAR ORDENES:
+   - Ve a "Buscar Items"
+   - Selecciona items y crea órdenes optimizadas
+
+================================================================================
+
+DESPLIEGUE EN INTERNET
+-----------------------
+
+Para acceso remoto, usa Cloudflare Tunnel:
+
+1. Descarga cloudflared:
+   https://github.com/cloudflare/cloudflared/releases
+
+2. Inicia la aplicación:
+   python app.py
+
+3. En otra terminal:
+   cloudflared tunnel --url http://localhost:5000
+
+4. Comparte la URL generada (ej: https://xxx.trycloudflare.com)
+
+Ver más detalles en README.md
+
+================================================================================
+
+DOCUMENTACION COMPLETA
+-----------------------
+
+Para guías detalladas, API REST, y más:
+- README.md          - Documentación completa
+- RELEASE_NOTES.md   - Notas de la versión
+- QUICKSTART.md      - Guía rápida
+
+================================================================================
+
+SOPORTE
+-------
+
+¿Problemas?
+- Revisa la sección Troubleshooting en README.md
+- Reporta bugs en GitHub Issues
+- Email: support@example.com
+
+================================================================================
+
+ARCHIVOS IMPORTANTES
+--------------------
+
+install.bat / install.ps1 / install.sh  - Instaladores automáticos
+start.bat / start.sh                     - Scripts de inicio rápido
+app.py                                   - Aplicación principal
+requirements.txt                         - Dependencias Python
+suppliers.db                             - Base de datos (se crea al instalar)
+README.md                                - Documentación completa
+VERSION                                  - Versión actual (0.1)
+
+================================================================================
+
+COMANDOS UTILES
+---------------
+
+Iniciar aplicación:
+  Windows: start.bat
+  Linux/Mac: ./start.sh
+
+Reiniciar (con cambios):
+  1. Presiona Ctrl+C en la terminal
+  2. Vuelve a ejecutar start.bat o start.sh
+
+Ver logs:
+  La terminal muestra todos los logs en tiempo real
+
+Backup de base de datos:
+  Windows: copy suppliers.db suppliers_backup.db
+  Linux/Mac: cp suppliers.db suppliers_backup.db
+
+================================================================================
+
+                    ¡LISTO! Ya puedes usar el sistema
+                    http://localhost:5000
+
+================================================================================
