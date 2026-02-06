@@ -7,6 +7,23 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [1.2.1] - 2026-02-05
+
+### Added
+- Utilidad de limpieza segura integrada en el instalador
+- Sección About con versión, licencia y notas de versión en la UI
+- Accesos directos opcionales para la aplicación y la web
+
+### Improved
+- Configuración modular en config/config.ini con VERSION persistente
+- Flujo de instalación con valores por defecto y prompts más claros
+- Verificación de integridad al finalizar instalación
+
+### Fixed
+- Bloqueos durante limpieza de carpetas antiguas
+- Compatibilidad de rutas y arranque en instalaciones previas
+- Actualización de accesos directos
+
 ## [0.1.0] - 2026-02-04
 
 ### Added

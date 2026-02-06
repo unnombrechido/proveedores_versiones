@@ -1,0 +1,54 @@
+{
+  "version": "1.2.1",
+  "release_date": "2026-02-05",
+  "release_name": "Mejoras de Instalación y Mantenimiento",
+  "type": "patch",
+  "status": "stable",
+  "description": "Mejoras en instalador, limpieza segura, configuración modular y accesos directos.",
+  "changes": {
+    "added": [
+      "Utilidad de limpieza segura integrada en el instalador",
+      "Sección About con versión, licencia y notas de versión en la UI",
+      "Accesos directos opcionales para la aplicación y la web"
+    ],
+    "changed": [
+      "Configuración modular en config/config.ini con VERSION persistente",
+      "Flujo de instalación con valores por defecto y prompts más claros",
+      "Verificación de integridad al finalizar instalación"
+    ],
+    "deprecated": [],
+    "removed": [],
+    "fixed": [
+      "Bloqueos durante limpieza de carpetas antiguas",
+      "Compatibilidad de rutas y arranque en instalaciones previas",
+      "Actualización de accesos directos"
+    ],
+    "security": []
+  },
+  "compatibility": {
+    "minimum_version": "0.1.0",
+    "breaking_changes": false
+  },
+  "files": {
+    "source": [
+      "proveedores-v1.2.1.zip"
+    ],
+    "documentation": [
+      "DATABASE_CLEANUP.md",
+      "LOAD_SAMPLE_DATA.md",
+      "USER_AUTHENTICATION.md",
+      "UPGRADE_GUIDE.md"
+    ],
+    "configuration": [
+      "config/config.ini"
+    ]
+  },
+  "checksum": {
+    "algorithm": "sha256",
+    "value": "B090CA686D2DEA887DC25094FB42173C28B593907E95A9DFA5B9EB0F7DF2DFDC"
+  },
+  "authors": [
+    "Equipo Proveedores"
+  ],
+  "notes": "Actualizar mediante INSTALAR.bat. Se crea backup automático si existe instalación previa."
+}
