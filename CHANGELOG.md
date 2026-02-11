@@ -7,6 +7,27 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-02-10
+
+### Added
+- Sistema de logging avanzado con rotación automática en desktop_app.py
+- Control de modo debug a través de configuración UI
+- Compatibilidad automática entre formatos de configuración antiguos y nuevos
+
+### Improved
+- Configuración estandarizada sin duplicados de claves
+- Instalador actualizado para consistencia de configuración
+- Logging controlado con límites de tamaño
+
+### Removed
+- Claves duplicadas en configuración (NAME, ADDRESS, etc.)
+- Logging incontrolable de run.bat
+
+### Fixed
+- Conflictos entre claves de configuración antiguas y nuevas
+- Actualización de versión durante instalación
+- Compatibilidad de configuración entre migraciones
+
 ## [1.2.1] - 2026-02-05
 
 ### Added

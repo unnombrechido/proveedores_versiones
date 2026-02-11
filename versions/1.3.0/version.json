@@ -1,0 +1,56 @@
+{
+  "version": "1.3.0",
+  "release_date": "2026-02-10",
+  "release_name": "Configuración Estandarizada y Logging Avanzado",
+  "type": "minor",
+  "status": "stable",
+  "description": "Sistema de configuración completamente estandarizado, logging con rotación automática, y compatibilidad mejorada entre versiones.",
+  "changes": {
+    "added": [
+      "Sistema de logging avanzado con rotación automática en desktop_app.py",
+      "Control de modo debug a través de configuración UI",
+      "Compatibilidad automática entre formatos de configuración antiguos y nuevos"
+    ],
+    "changed": [
+      "Configuración estandarizada sin duplicados de claves",
+      "Instalador actualizado para consistencia de configuración",
+      "Logging controlado con límites de tamaño"
+    ],
+    "deprecated": [],
+    "removed": [
+      "Claves duplicadas en configuración (NAME, ADDRESS, etc.)",
+      "Logging incontrolable de run.bat"
+    ],
+    "fixed": [
+      "Conflictos entre claves de configuración antiguas y nuevas",
+      "Actualización de versión durante instalación",
+      "Compatibilidad de configuración entre migraciones"
+    ],
+    "security": []
+  },
+  "compatibility": {
+    "minimum_version": "0.1.0",
+    "breaking_changes": false
+  },
+  "files": {
+    "source": [
+      "proveedores-v1.3.0.zip"
+    ],
+    "documentation": [
+      "CONFIGURACIÓN.md",
+      "LOGGING.md",
+      "MIGRATION_GUIDE.md"
+    ],
+    "configuration": [
+      "config/config.ini"
+    ]
+  },
+  "checksum": {
+    "algorithm": "sha256",
+    "value": "TBD"
+  },
+  "authors": [
+    "Equipo Proveedores"
+  ],
+  "notes": "Actualizar mediante INSTALAR.bat. Configuraciones existentes se migran automáticamente. Logging ahora con rotación automática."
+}
