@@ -48,6 +48,8 @@ Versión 1.3.0 introduce mejoras significativas en el sistema de configuración,
 - La vista previa de órdenes muestra una segunda vista previa al imprimir.
 - El desinstalador no elimina carpetas/archivos completamente y requiere intervención manual.
 - Importar desde una versión anterior puede causar discrepancias en configuración y datos.
+- La aplicación no respeta la configuración de zoom al reabrirse.
+- Los enlaces de Acerca de y Licencia están construidos incorrectamente.
 
 ## Documentación
 

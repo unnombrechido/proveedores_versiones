@@ -35,7 +35,9 @@
     "La versión no se actualiza correctamente en la configuración durante la instalación",
     "La vista previa de órdenes muestra una segunda vista previa al imprimir",
     "El desinstalador no elimina carpetas/archivos completamente y requiere intervención manual",
-    "Importar desde una versión anterior puede causar discrepancias en configuración y datos"
+    "Importar desde una versión anterior puede causar discrepancias en configuración y datos",
+    "La aplicación no respeta la configuración de zoom al reabrirse",
+    "Los enlaces de Acerca de y Licencia están construidos incorrectamente"
   ],
   "compatibility": {
     "minimum_version": "0.1.0",
