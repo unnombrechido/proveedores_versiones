@@ -42,6 +42,12 @@ Versión 1.3.0 introduce mejoras significativas en el sistema de configuración,
 ## Problemas Conocidos
 
 - Modo debug debe habilitarse manualmente en configuración o variables de entorno.
+- El servicio de Windows no está funcionando correctamente.
+- La función de exportación está deshabilitada en la aplicación.
+- La versión no se actualiza correctamente en la configuración durante la instalación.
+- La vista previa de órdenes muestra una segunda vista previa al imprimir.
+- El desinstalador no elimina carpetas/archivos completamente y requiere intervención manual.
+- Importar desde una versión anterior puede causar discrepancias en configuración y datos.
 
 ## Documentación
 
