@@ -2,17 +2,17 @@
 
 ## � Current Version
 
-**v1.0.0** - First stable release (2026-02-04)
-- Distribution file: `proveedores-v1.0.zip` (~134 KB)
+**v1.3.1** - Correcciones de Instalador y Migración (2026-03-09)
+- Distribution files: `proveedores-v1.3.1.zip` / `proveedores-v1.3.1-nsis-setup.exe`
 - Status: Stable
-- [View Release Notes](versions/1.0.0/RELEASE_NOTES.md)
+- [View Release Notes](versions/1.3.1/RELEASE_NOTES.md)
 
 ## 🚀 Common Commands
 
 ### View Current Version
 ```bash
 cat VERSION
-# Output: 1.0.0
+# Output: 1.3.1
 ```
 
 ### View Change History
@@ -25,26 +25,30 @@ cat CHANGELOG.md
 ls -1 versions/ | grep -E '^[0-9]+\.'
 # Output: 0.1.0
 #         1.0.0
+#         1.2.1
+#         1.3.0
+#         1.3.1
 ```
 
 ### View Version Details
 ```bash
 # JSON metadata
-cat versions/1.0.0/version.json
+cat versions/1.3.1/version.json
 
 # Release notes
-cat versions/1.0.0/RELEASE_NOTES.md
+cat versions/1.3.1/RELEASE_NOTES.md
 ```
 
-## ✨ What's New in v1.0.0
+## ✨ What's New in v1.3.1
 
-- ✨ Database maintenance utilities
-- ✨ Sample data loader
-- ✨ CSV import templates
-- ✨ Configurable logo support
-- ✨ Upgrade path from v0.1
-- 🐛 Import modal pre-selection fix
-- 🐛 run.bat path correction
+- 🔧 Native Windows NSIS installer (`proveedores-v1.3.1-nsis-setup.exe`)
+- 🐛 Fixed 0-byte database on fresh installs
+- 🐛 Fixed `contact_type_id` migration error
+- 🐛 Fixed cleanup script path (`Split-Path` → `$installPath`)
+- 🐛 Fixed `flask_login` missing (requirements.txt not deployed)
+- ✨ `contact_types` LOV seeded on install
+- ✨ In-place upgrades now run schema migration + LOV seeding
+- ✨ Contact migration is idempotent for all upgrade scenarios
 
 ## 📝 Creating a New Version
 

@@ -8,9 +8,9 @@ Este repositorio gestiona el control de versiones y releases del sistema Proveed
 
 ## 📦 Versión Actual
 
-**v1.0.0** - Primera versión estable del Sistema de Gestión de Proveedores
-- **Fecha de Lanzamiento**: 2026-02-04
-- **Archivo de Distribución**: `proveedores-v1.0.zip` (~134 KB)
+**v1.3.1** - Correcciones de Instalador y Migración
+- **Fecha de Lanzamiento**: 2026-03-09
+- **Archivos de Distribución**: `proveedores-v1.3.1.zip` / `proveedores-v1.3.1-nsis-setup.exe`
 - **Estado**: Stable
 
 ## 🗂️ Estructura del Repositorio
@@ -35,13 +35,13 @@ proveedores_versiones/
 
 ### Descargar la Última Versión
 
-La última versión estable es **v1.0.0** - archivo de distribución: `proveedores-v1.0.zip`
+La última versión estable es **v1.3.1** - archivos de distribución: `proveedores-v1.3.1.zip` / `proveedores-v1.3.1-nsis-setup.exe`
 
 ### Ver Versión Actual
 
 ```bash
 cat VERSION
-# Output: 1.0.0
+# Output: 1.3.1
 ```
 
 ### Ver Historial de Cambios
@@ -53,19 +53,18 @@ cat CHANGELOG.md
 ### Ver Detalles de la Versión Actual
 
 ```bash
-cat versions/1.0.0/version.json
-cat versions/1.0.0/RELEASE_NOTES.md
+cat versions/1.3.1/version.json
+cat versions/1.3.1/RELEASE_NOTES.md
 ```
 
-## ✨ Características de v1.0.0
+## ✨ Características de v1.3.1
 
-- ✨ Utilidades de mantenimiento de base de datos
-- ✨ Cargador automático de datos de ejemplo
-- ✨ Templates CSV para importación
-- ✨ Soporte para logo personalizable
-- ✨ Sistema de actualización desde v0.1
-- 🐛 Múltiples correcciones de bugs
-- 💡 Mejoras en la interfaz de usuario
+- 🔧 Instalador NSIS nativo para Windows
+- 🐛 Corrección de base de datos vacía (0 bytes) en instalaciones nuevas
+- 🐛 Corrección de error de migración contact_type_id
+- 🐛 Soporte correcto para actualizaciones multi-versión (v0.1 → v1.3.1)
+- 🐛 Migración de contactos idempotente y completa para todos los escenarios
+- ✨ Tabla contact_types sembrada correctamente con tipos de contacto predefinidos
 
 ## 📚 Documentación
 

@@ -7,6 +7,30 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [1.3.1] - 2026-03-09
+
+### Added
+- Instalador NSIS nativo para Windows con asistente gráfico
+- Tabla `contact_types` LOV con tipos predefinidos (General, Compras, Ventas, Contabilidad, Técnico, Logística)
+- `supplier_contacts.contact_type_id` referencia FK a `contact_types` en lugar de texto libre
+- Detección y cierre automático de instancias en ejecución antes de instalar (evita archivos bloqueados)
+- Pipeline de migración completo: `migrate_db_schema.py` + `init_lovs.py` + `migrate_supplier_contacts.py` para todos los escenarios de upgrade
+
+### Fixed
+- Base de datos vacía (0 bytes) en instalación nueva — import de modelos en `init_db()` creaba un `Base` separado sin tablas registradas
+- Error `table supplier_contacts has no column named contact_type` durante migración desde v1.0
+- `init_lovs.py` no sembraba la tabla `contact_types`
+- `migrate_db_schema.py` nunca se ejecutaba durante upgrades in-place
+- `migrate_supplier_contacts.py` no era idempotente (duplicaba contactos en segunda ejecución)
+- Ruta de `cleanup_installation.ps1` resolviéndose a `C:\scripts\...` en lugar de `C:\SistemaProveedores\scripts\...`
+- `requirements.txt` no se desplegaba al instalar, causando falla de `pip install`
+- Migración de contactos omitida en upgrades in-place (estaba dentro del bloque `isSameDb == false`)
+
+### Improved
+- Soporte de upgrade desde v0.1, v1.0, v1.2.1 y v1.3.0 correctamente diferenciado
+- `migrate_supplier_contacts.py` rellena `contact_type_id` en bases de datos v1.2.1 con columna legacy
+- `init_lovs.py` se ejecuta en toda instalación nueva garantizando datos LOV siempre presentes
+
 ## [1.3.0] - 2026-02-10
 
 ### Added
